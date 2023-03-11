@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: .8125rem;
+}
+
+/* Typography */
+
+h1 {
+    font-size: .8125rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: .75rem;
+    font-weight: 400;
+}
+
+.likes, .username {
+    font-weight: 700;
+}
+
+/* Layout */
+
+header .container {
+    display: flex;  
+    justify-content: space-between; 
+}
+
+.logo {
+    height: 34px;
+}
+
+.profile-picture {
+    max-width: 2.125rem;
+    /* border-radius: 50%; */
+}
+
+.post-info {
+    display: flex;
+    justify-content: left;
+}
+
+.post-names {
+    margin-left: 50px; 
+}
+
+.post-picture {
+    max-width: 23.4375rem;
+}
+
+.container {
+    max-width: 23.4375rem;
+    margin: 0 auto;
+}
+
+.icon {
+    width: 24px;
+}
