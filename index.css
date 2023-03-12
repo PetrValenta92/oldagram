@@ -1,60 +1,88 @@
+:root {
+  --black-clr: #000;
+  --white-clr: #fff;
+  --gray-clr: #c6c6c6;
+  --gray-bg-clr: #f5f5f5;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: .8125rem;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.8125rem;
+  color: var(--black-clr);
+  background-color: var(--gray-bg-clr);
 }
 
 /* Typography */
 
 h1 {
-    font-size: .8125rem;
-    font-weight: 700;
+  font-size: 0.8125rem;
+  font-weight: 700;
 }
 
 h2 {
-    font-size: .75rem;
-    font-weight: 400;
+  font-size: 0.75rem;
+  font-weight: 400;
 }
 
-.likes, .username {
-    font-weight: 700;
+.like-count,
+.username {
+  font-weight: 700;
 }
 
 /* Layout */
 
+header {
+  position: sticky;
+  top: 0;
+}
+
+section {
+  margin-bottom: 25px 0;
+}
+
 header .container {
-    display: flex;  
-    justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--gray-clr);
 }
 
-.logo {
-    height: 34px;
-}
-
-.profile-picture {
-    max-width: 2.125rem;
-    /* border-radius: 50%; */
-}
-
-.post-info {
-    display: flex;
-    justify-content: left;
-}
-
-.post-names {
-    margin-left: 50px; 
-}
-
-.post-picture {
-    max-width: 23.4375rem;
+.container,
+.post-img {
+  max-width: 23.4375rem;
 }
 
 .container {
-    max-width: 23.4375rem;
-    margin: 0 auto;
+  margin: 0 auto;
+  background-color: var(--white-clr);
+}
+
+.oldagram-logo {
+  max-width: 8rem;
+  padding-left: 1rem;
+}
+
+header .profile-avatar {
+  padding: 1rem;
+}
+
+.post-info {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.profile-avatar {
+  max-width: 2.125rem;
+  border-radius: 50%;
+}
+
+.profile-info {
+  padding-left: 1rem;
 }
 
 .icon {
-    width: 24px;
+  width: 24px;
 }
