@@ -1,8 +1,8 @@
 :root {
-  --black-clr: #000;
-  --white-clr: #fff;
-  --gray-clr: #c6c6c6;
-  --gray-bg-clr: #f5f5f5;
+  --text-clr: #000;
+  --section-bg-clr: #fff;
+  --border-clr: #c6c6c6;
+  --bg-clr: #f5f5f5;
 }
 
 body {
@@ -10,8 +10,8 @@ body {
   padding: 0;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 0.8125rem;
-  color: var(--black-clr);
-  background-color: var(--gray-bg-clr);
+  background-color: var(--bg-clr);
+  color: var(--text-clr);
 }
 
 /* Typography */
@@ -26,8 +26,8 @@ h2 {
   font-weight: 400;
 }
 
-.like-count,
-.username {
+.post__like-count,
+.post__username {
   font-weight: 700;
 }
 
@@ -38,51 +38,73 @@ header {
   top: 0;
 }
 
-section {
-  margin-bottom: 25px 0;
+.container {
+  margin: 0 auto;
+  background-color: var(--section-bg-clr);
+  border-bottom: 1px solid var(--border-clr);
 }
 
-header .container {
+.oldagram {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 2px solid var(--gray-clr);
 }
 
 .container,
-.post-img {
+.post__img {
   max-width: 23.4375rem;
 }
 
-.container {
-  margin: 0 auto;
-  background-color: var(--white-clr);
-}
-
-.oldagram-logo {
+.oldagram__logo {
   max-width: 8rem;
-  padding-left: 1rem;
+  margin: 0.375rem 0.625rem;
 }
 
-header .profile-avatar {
-  padding: 1rem;
+.oldagram__avatar {
+  margin: 1rem;
 }
 
-.post-info {
+.post__profile,
+.post__body {
+  padding: 0.625rem;
+}
+
+.post__profile {
   display: flex;
   justify-content: left;
   align-items: center;
 }
 
-.profile-avatar {
+.avatar {
   max-width: 2.125rem;
   border-radius: 50%;
 }
 
-.profile-info {
-  padding-left: 1rem;
+.post__info {
+  padding-left: 0.5rem;
+  line-height: 0.375em;
 }
 
 .icon {
-  width: 24px;
+  width: 1.5rem;
+  margin-right: 0.875rem;
+  cursor: pointer;
+}
+
+.icon:hover,
+.icon:focus {
+  opacity: 0.5;
+}
+
+.post__like-count,
+.post__caption {
+  padding-left: 0.25rem;
+}
+
+.post__like-count {
+  margin: 0.625rem 0;
+}
+
+.post__caption {
+  margin: 0.25rem 0;
 }
