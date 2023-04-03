@@ -83,11 +83,17 @@ header {
 .post__info {
   padding-left: 0.5rem;
   line-height: 0.375em;
+  
+}
+
+.post__icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5em;
+  margin: 1em 0 1.625em 0;
 }
 
 .icon {
-  width: 1.5rem;
-  margin-right: 0.875rem;
   cursor: pointer;
 }
 
