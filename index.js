@@ -16,9 +16,9 @@ function getFeedHtml(){
             <img class="post__img" src="./${post.post}" alt="The post with a portraite of ${post.name}">
             <div class="post__body">
                 <div class="post__icons">
-                    <img class="icon" src="./images/icons/icon-heart.png" alt="icon of like">
-                    <img class="icon" src="./images/icons/icon-comment.png" alt="icon of comment">
-                    <img class="icon" src="./images/icons/icon-dm.png" alt="icon of direct message">
+                    <i class="icon fa-sharp fa-regular fa-heart fa-2xl"></i>
+                    <i class="icon fa-regular fa-comment fa-flip-horizontal fa-2xl"></i>
+                    <i class="icon fa-regular fa-paper-plane fa-2xl"></i>
                 </div>
                 <p class="post__like-count">${post.likes} likes</p> 
                 <p class="post__caption"><span class="post__username">${post.username}</span> ${post.comment}</p>
